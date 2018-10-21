@@ -7,7 +7,8 @@ class Todo extends React.Component {
         this.state = {
             whatIAmTyping: '', 
             todos: [],
-            counter: 0
+            counter: 0, 
+            date: new Date().toLocaleString()
         };
     }
     
@@ -64,7 +65,8 @@ class Todo extends React.Component {
                 <div className= "container">
                     <div className = "headercontainer">
                         <h4 className="title">TODO LIST</h4>
-                        <p>Getting one task done at a time</p>
+                        <div className="date"><p className="date">{this.state.date}</p></div>
+                        <p className="par">Getting one task done at a time</p>
                     </div>
                     <ol>{todosInHTML}</ol>
                     <input className= "inputButton" onKeyUp={handleKeyPress} value= {this.state.whatIAmTyping} placeholder="Enter a task.."/>    
