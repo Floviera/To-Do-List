@@ -10,14 +10,14 @@ body {
 }
 
 .container {
-    background-color: #FF6666; 
-    width: 375px;
+    width: 350px;
     min-height: 700px;
     margin: 0 auto;
     margin-top: 10%;
     margin-bottom: 10%;
-    box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
+    box-shadow:-20px -20px 0px 0px rgba(100,100,100,.2);
     border-radius: 22px;
+    background: linear-gradient( #6559ae, #ff7159, #6559ae);
 }
 
 /*header of the list------------------------------*/
@@ -27,7 +27,6 @@ body {
     width: auto;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
-    background-color: #FF6666;
     margin: 0 auto;
 }
 
@@ -55,30 +54,35 @@ p{
 
 /*input------------------------------*/
 input {
-   background-color: #FF6666; 
-   margin: 0px auto;
+   background-color: transparent; 
+   margin: 0 auto;
    color: white; 
    padding-top: 10px;
    padding-bottom: 10px;
-   padding-right: 166px;
+   padding-right: 135px;
    padding-left: 7px;
    border-radius: 50px;
-   border: 1px solid rgba(255, 255, 255, 0.5);
+   border: 1px solid #d7d7d7;
 }
 
 input:hover{
-    background-color: #fb6363;
+    background-color: #b16687;
 }
 
 ::placeholder {
     color: white;
     opacity: 1; /* Firefox */
+    font-family:'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
 }
 
 
 /*output of task------------------------------*/
 ol {
     font-size: 20px;
+    font-family:'Open Sans Condensed', sans-serif; 
+    font-weight: 100;
+    
     
 }
 

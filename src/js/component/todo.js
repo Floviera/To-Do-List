@@ -63,11 +63,11 @@ class Todo extends React.Component {
             <div className="full-wrap">
                 <div className= "container">
                     <div className = "headercontainer">
-                        <h4 className="title">Todo List</h4>
+                        <h4 className="title">TODO LIST</h4>
                         <p>Getting one task done at a time</p>
                     </div>
                     <ol>{todosInHTML}</ol>
-                    <input className= "inputButton" onKeyUp={handleKeyPress} value= {this.state.whatIAmTyping} placeholder="Enter a task"/>    
+                    <input className= "inputButton" onKeyUp={handleKeyPress} value= {this.state.whatIAmTyping} placeholder="Enter a task.."/>    
                 </div>
                 <div className="footer">
                     <p className="footerpar"> Made with love by&#x2c; Florencia Viera
