@@ -4,24 +4,19 @@
 
 
 body {
-    font-family: "Roboto";
     color: white;
     outline: none;
-    background-color: #d2e3ed;
+    background-color: #f8f1f1;
 }
 
 .container {
-    background-color: #fff; 
+    background-color: #FF6666; 
     width: 375px;
     min-height: 700px;
     margin: 0 auto;
     margin-top: 10%;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
-    -webkit-backface-visibility: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
+    margin-bottom: 10%;
+    box-shadow:-20px -20px 0px 0px rgba(100,100,100,.1);
     border-radius: 22px;
 }
 
@@ -32,50 +27,98 @@ body {
     width: auto;
     border-top-left-radius: 22px;
     border-top-right-radius: 22px;
-    background:linear-gradient(#5C258D,#4389A2);
+    background-color: #FF6666;
     margin: 0 auto;
 }
 
-h4 {
-    font-size: 25px;
-    font-family: "Roboto";
+/*title------------------------------*/
+.title {
+    font-family:'Quicksand', sans-serif;
+    font-size: 50px;
+    font-weight: 100;
     letter-spacing: 2px;
+    letter-spacing:0.05em;
     text-align: center;
     padding-top: 5%;
+    margin-bottom: 8%;
+    
 }
 
+p{
+   font-family:'Open Sans Condensed', sans-serif; 
+   font-weight: 100;
+   text-align: center;
+   font-size: 19px;
+   border-bottom: 1px solid rgba(255,255,255,.3); 
+}
+
+
+/*input------------------------------*/
 input {
-   background-color: #eeeeee; 
+   background-color: #FF6666; 
    margin: 0px auto;
-   color: #2a87a4; 
+   color: white; 
    padding-top: 10px;
    padding-bottom: 10px;
    padding-right: 166px;
    padding-left: 7px;
    border-radius: 50px;
-   border: 1px solid #a69f9f;
+   border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 input:hover{
-    background-color: #d7d7d7;
+    background-color: #fb6363;
 }
 
+::placeholder {
+    color: white;
+    opacity: 1; /* Firefox */
+}
+
+
+/*output of task------------------------------*/
 ol {
     font-size: 20px;
-    border-bottom: 1px solid #1c2340;
-    border-top: 1px solid #1c2340;
+    
 }
 
+li {
+    color: #eeeeee;
+}
+
+/*button------------------------------*/
 button{
     background: transparent;
+    border-color: transparent;
     border-radius: 50px;
 }
 
 button:hover{
-    background-color: #641f938c;
+    background-color: #cd4046;
+}
+
+/*footer------------------------------*/
+.footer{
+    padding: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875em;
+    color: #212529;
+    text-align: center; 
+    
+}
+
+@keyframes pound {
+	from { transform: none; }
+	50% { transform: scale(1.4); }
+	to { transform: none; }
 }
 
 
-li {
-    color: #2a87a4;
+.heart {
+	display: inline-block;
+	font-size: 15px;
+	color: #212529;
+	animation: pound .80s infinite;
+	transform-origin: center;
 }
+

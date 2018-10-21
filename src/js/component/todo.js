@@ -58,13 +58,23 @@ class Todo extends React.Component {
          //(/[a-z]/i) is a regular expression 
         };
                                                                                 //listens to the click and then triggers the deleteItem function
-        const todosInHTML = this.state.todos.map((todo,i) => (<li key={i}>{todo} <button onClick={(e) => this.deleteItem(i) }><i className="far fa-trash-alt"></i></button></li>));
+        const todosInHTML = this.state.todos.map((todo,i) => (<li key={i}>{todo} <button onClick={(e) => this.deleteItem(i) }><i className="fas fa-times-circle"></i></button></li>));
         return ( 
-            <div className= "container">
-                <div className = "headercontainer"><h4>To Do List:</h4></div>
-                <ol>{todosInHTML}</ol>
-                <input className= "inputButton" onKeyUp={handleKeyPress} value= {this.state.whatIAmTyping} placeholder="Enter a task"/>    
-            </div>  
+            <div className="full-wrap">
+                <div className= "container">
+                    <div className = "headercontainer">
+                        <h4 className="title">Todo List</h4>
+                        <p>Getting one task done at a time</p>
+                    </div>
+                    <ol>{todosInHTML}</ol>
+                    <input className= "inputButton" onKeyUp={handleKeyPress} value= {this.state.whatIAmTyping} placeholder="Enter a task"/>    
+                </div>
+                <div className="footer">
+                    <p className="footerpar"> Made with love by&#x2c; Florencia Viera
+                        <i className="heart">&#x2665;</i>
+                    </p>
+                </div>
+            </div>
         );
     }
 }
