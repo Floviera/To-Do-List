@@ -1,0 +1,68 @@
+@import '~bootstrap/scss/bootstrap.scss';
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
+
+.container {
+    background-color: #262e4c; 
+    padding-bottom: 250px;
+    margin-top: 35px;
+    margin: 0px auto;
+    width: 350px;
+    margin-top: 15px;
+    border-width: 4px;
+    border-color: black;
+}
+
+.headercontainer {
+    background-color: #de3f53;
+    color: white;
+    margin-top: 10px;
+    border: #de3f53;
+}
+
+h4 {
+    margin-left: 75px; 
+    font-size: 25px;
+    font-family: "Roboto";
+    letter-spacing: 2px;
+}
+
+input {
+   background-color: #0c1438; 
+   margin: 0px auto;
+   color: #fff; 
+   padding-top: 10px;
+   padding-bottom: 10px;
+   padding-right: 145px;
+   padding-left: 7px;
+   border-color: #0c1438;
+}
+
+ol {
+    font-size: 20px;
+    border-bottom: 1px solid #1c2340;
+    border-top: 1px solid #1c2340;
+}
+
+button {
+    background-color: #8284a3;
+    border-radius: 50%;
+    font-size: 10px;
+}
+
+body {
+    font-family: "Roboto";
+    color: white;
+    outline: none;
+    background: linear-gradient(270deg, #D9A68C, #D9D68C);
+}
+/* 
+
+    You can write your own styles here...
+    
+    
+    ...Or you can use the import command to include 
+    other sylesheets into your bunde as well, e.j:
+    
+    import 'relative/path/to/stylesheet.scss';
+
+*/
