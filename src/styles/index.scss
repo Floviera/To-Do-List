@@ -1,131 +1,136 @@
-@import '~bootstrap/scss/bootstrap.scss';
-@import url(https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900);
-
-
+@import "~bootstrap/scss/bootstrap.scss";
+@import url(
+  https://fonts.googleapis.com/css?family=Roboto:100,
+  300,
+  400,
+  500,
+  700,
+  900
+);
 
 body {
-    color: white;
-    outline: none;
-    background-color: #f8f1f1;
+  color: white;
+  outline: none;
+  background-color: #f8f1f1;
 }
 
 .container {
-    width: 350px;
-    min-height: 700px;
-    margin: 0 auto;
-    margin-top: 10%;
-    margin-bottom: 10%;
-    box-shadow:-20px -20px 0px 0px rgba(100,100,100,.2);
-    border-radius: 22px;
-    background: linear-gradient( #6559ae, #ff7159, #6559ae);
+  width: 350px;
+  min-height: 700px;
+  margin: 0 auto;
+  margin-top: 10%;
+  margin-bottom: 10%;
+  box-shadow: -20px -20px 0px 0px rgba(100, 100, 100, 0.2);
+  border-radius: 22px;
+  background: linear-gradient(#f4b278, #ff7159, #6559ae);
 }
 
 /*header of the list------------------------------*/
 .headercontainer {
-    position: relative;
-    height: 170px;
-    width: auto;
-    border-top-left-radius: 22px;
-    border-top-right-radius: 22px;
-    margin: 0 auto;
+  position: relative;
+  height: 170px;
+  width: auto;
+  border-top-left-radius: 22px;
+  border-top-right-radius: 22px;
+  margin: 0 auto;
 }
 
 /*title------------------------------*/
 .title {
-    font-family:'Quicksand', sans-serif;
-    font-size: 50px;
-    font-weight: 100;
-    letter-spacing: 2px;
-    letter-spacing:0.05em;
-    text-align: center;
-    padding-top: 5%;
-    margin-bottom: 8%;
-    
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  font-weight: 100;
+  letter-spacing: 2px;
+  letter-spacing: 0.05em;
+  text-align: center;
+  padding-top: 5%;
+  margin-bottom: 8%;
 }
 
-p{
-   font-family:'Open Sans Condensed', sans-serif; 
-   font-weight: 100;
-   text-align: center;
-   font-size: 19px;
+p {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 100;
+  text-align: center;
+  font-size: 19px;
 }
 
-.par{
-   border-bottom: 1px solid rgba(255,255,255,.3); 
-}   
-
+.par {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
 
 /*input------------------------------*/
 input {
-   background-color: transparent; 
-   margin: 0 auto;
-   color: white; 
-   padding-top: 10px;
-   padding-bottom: 10px;
-   padding-right: 135px;
-   padding-left: 7px;
-   border-radius: 50px;
-   border: 1px solid #d7d7d7;
+  background-color: transparent;
+  margin: 0 auto;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 135px;
+  padding-left: 7px;
+  border-radius: 50px;
+  border: 1px solid #d7d7d7;
+  outline: none;
 }
 
-input:hover{
-    background-color: #b16687;
+input:hover {
+  background-color: #b16687;
 }
 
 ::placeholder {
-    color: white;
-    opacity: 1; /* Firefox */
-    font-family:'Open Sans Condensed', sans-serif; 
-    font-weight: 100;
+  color: white;
+  opacity: 1; /* Firefox */
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 100;
 }
-
 
 /*output of task------------------------------*/
 ol {
-    font-size: 20px;
-    font-family:'Open Sans Condensed', sans-serif; 
-    font-weight: 100;
-    margin-top: 15px;
-    
+  font-size: 20px;
+  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 100;
+  margin-top: 15px;
 }
 
 li {
-    color: #eeeeee;
+  color: #eeeeee;
 }
 
 /*button------------------------------*/
-button{
-    background: transparent;
-    border-color: transparent;
-    border-radius: 50px;
+button {
+  background: transparent;
+  border-color: transparent;
+  border-radius: 50px;
 }
 
-button:hover{
-    background-color: #cd4046;
+button:hover {
+  background-color: #cd4046;
 }
 
 /*footer------------------------------*/
-.footer{
-    padding: 5px;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 0.875em;
-    color: #212529;
-    text-align: center; 
-    
+.footer {
+  padding: 5px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.875em;
+  color: #212529;
+  text-align: center;
 }
 
 @keyframes pound {
-	from { transform: none; }
-	50% { transform: scale(1.4); }
-	to { transform: none; }
+  from {
+    transform: none;
+  }
+  50% {
+    transform: scale(1.4);
+  }
+  to {
+    transform: none;
+  }
 }
-
 
 .heart {
-	display: inline-block;
-	font-size: 15px;
-	color: #212529;
-	animation: pound .80s infinite;
-	transform-origin: center;
+  display: inline-block;
+  font-size: 15px;
+  color: #212529;
+  animation: pound 0.8s infinite;
+  transform-origin: center;
 }
-
